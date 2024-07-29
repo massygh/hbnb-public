@@ -67,9 +67,18 @@ main {
     width: 300px;
 }
 
-.place-image, .place-image-large {
-    width: 100%;
-    border-radius: 10px;
+.place-image {
+    width: 100%; /* Ajuste la largeur de l'image à 100% de son conteneur */
+    height: auto; /* Garde le ratio d'aspect de l'image */
+    max-width: 300px; /* Taille maximale pour les images des cartes */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+.place-image-large {
+    width: 100%; /* Ajuste la largeur de l'image à 100% de son conteneur */
+    height: auto; /* Garde le ratio d'aspect de l'image */
+    max-width: 600px; /* Taille maximale pour les grandes images */
+    border-radius: 10px; /* Coins arrondis */
 }
 
 .place-info {
