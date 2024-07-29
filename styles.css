@@ -1,0 +1,134 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #000000;
+}
+
+header {
+    background: #f7a100;
+    color: #fff;
+    padding: 10px 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.login-button {
+    color: #fff;
+    text-decoration: none;
+    background: #251b00;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+main {
+    padding: 20px;
+    margin-bottom: 60px; /* Pour éviter que le footer ne cache le contenu */
+}
+
+.places-list, .reviews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.place-card, .review-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.place-image, .place-image-large {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.place-info {
+    padding: 10px 0;
+}
+
+.details-button, .add-review {
+    background: #f4b400;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.login-form, .add-review-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.login-form label, .add-review-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.login-form input, .add-review-form input, .add-review-form select, .add-review-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form button, .add-review-form button {
+    background: #f4b400;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .place-card, .review-card {
+        width: 45%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .place-card, .review-card {
+        width: 30%;
+    }
+}
